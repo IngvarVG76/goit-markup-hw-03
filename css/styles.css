@@ -1,0 +1,332 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --dakr-overlays-headings: #2e2f42;
+  --body-text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-background-color: #e7e9fc;
+  --light-bacground-color: #f4f4fd;
+  --primary-background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  cursor: pointer;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* * {
+  color: none;
+} */
+
+/* Body */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--body-text-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-background-color);
+}
+
+.header-nav-conteiner {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dakr-overlays-headings);
+  margin-right: 78px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-logo > span {
+  color: var(--primary-brand-color);
+}
+
+.header-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dakr-overlays-headings);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--pressed-state-color);
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+.header-contact-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+  text-decoration: none;
+}
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--pressed-state-color);
+}
+
+/* Section 1 Effective Solutions for Your Business */
+
+.solutions {
+  background-color: var(--dakr-overlays-headings);
+  height: 600px;
+}
+
+/* .solution-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  gap: 48px;
+}
+*/
+
+.solutions-title {
+  width: 494px;
+  height: 120px;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-background-color);
+}
+.solution-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.04em;
+  color: var(--primary-background-color);
+  background-color: var(--primary-brand-color);
+}
+.solution-btn:focus,
+.solution-btn:hover {
+  background-color: var(--pressed-state-color);
+}
+
+/* Secrtion 2 Main principles */
+
+.priciples {
+  background-color: var(--primary-background-color);
+  height: 224px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-top: 120px;
+}
+
+/* .principles-container {
+  display: flex;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-top: 120px;
+} */
+.principles-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dakr-overlays-headings);
+  margin-bottom: 8px;
+}
+.principles-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Section 3 What are we doing */
+
+.what {
+  background-color: var(--primary-background-color);
+  /* height: 224px; */
+}
+.what-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dakr-overlays-headings);
+}
+
+/* Section 4 Our Team */
+.team {
+  background-color: var(--light-bacground-color);
+}
+.team-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dakr-overlays-headings);
+}
+
+.team-item {
+  background-color: var(--primary-background-color);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dakr-overlays-headings);
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+}
+
+/* Footer section */
+.footer {
+  color: var(--accent-background-color);
+  background-color: var(--dakr-overlays-headings);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: inherit;
+}
+.footer-logo > span {
+  color: var(--primary-brand-color);
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* Potrfolio.html */
+.solutions-portfolio {
+  background-color: var(--primary-background-color);
+}
+
+/* Section 1 Filters */
+.solutions-filter-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color);
+  background-color: var(--light-bacground-colorcolor);
+}
+
+.solutions-filter-btn:hover,
+.solutions-filter-btn:focus {
+  color: var(--primary-background-color);
+  background-color: var(--pressed-state-color);
+}
+/* Subsection 1 cards */
+
+.solutions-result list {
+  background-color: var(--primary-background-color);
+}
+.solution-result-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dakr-overlays-headings);
+}
+
+.solution-result-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+}
