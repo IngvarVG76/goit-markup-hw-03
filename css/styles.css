@@ -78,7 +78,7 @@ body {
 /*========================================== Header ==========================================*/
 .header {
   background-color: var(--primary-background-color);
-  border-bottom: 1px solid #E7E9FC;
+  border-bottom: 1px solid var(--accent-background-color);
 }
 
 .header-nav-conteiner {
@@ -225,7 +225,7 @@ body {
   padding-top: 60px;
   padding-bottom: 120px;
   background-color: var(--primary-background-color);
-  }
+}
 
 .what-title {
   margin-bottom: 72px;
