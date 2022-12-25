@@ -42,6 +42,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 *,
@@ -58,11 +60,9 @@ img {
   padding-right: 15px;
 }
 
-/* * {
-  color: none;
-} */
 
-/* Body */
+
+/* ========================================== Body ==========================================  */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -77,7 +77,7 @@ body {
   list-style: none;
 }
 
-/* Header */
+/*========================================== Header ==========================================*/
 .header {
   background-color: var(--primary-background-color);
 }
@@ -93,6 +93,7 @@ body {
 }
 
 .header-logo {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -105,6 +106,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
 .header-logo > span {
   color: var(--primary-brand-color);
 }
@@ -116,6 +118,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--dakr-overlays-headings);
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--pressed-state-color);
@@ -127,6 +130,7 @@ body {
   gap: 40px;
   margin-left: auto;
 }
+
 .header-contact-link {
   font-weight: 400;
   font-size: 16px;
@@ -135,40 +139,41 @@ body {
   color: var(--body-text-color);
   text-decoration: none;
 }
+
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--pressed-state-color);
 }
 
-/* Section 1 Effective Solutions for Your Business */
+/* =====================Section 1 Effective Solutions for Your Business===================== */
 
 .solutions {
   background-color: var(--dakr-overlays-headings);
+}
+
+.solution-container {
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
   height: 600px;
 }
 
-/* .solution-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  gap: 48px;
-}
-*/
-
 .solutions-title {
-  width: 494px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  max-width: 496px;
   height: 120px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   color: var(--primary-background-color);
 }
+
 .solution-btn {
+  display: inline-block;
+  margin: 0 auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -176,13 +181,20 @@ body {
   letter-spacing: 0.04em;
   color: var(--primary-background-color);
   background-color: var(--primary-brand-color);
+  width: 169px;
+  height: 56px;
+  left: 636px;
+  top: 428px;
+  border: none;
+  border-radius: 4px;
 }
+
 .solution-btn:focus,
 .solution-btn:hover {
   background-color: var(--pressed-state-color);
 }
 
-/* Secrtion 2 Main principles */
+/*================================ Secrtion 2 Main principles ================================*/
 
 .priciples {
   background-color: var(--primary-background-color);
@@ -190,17 +202,12 @@ body {
   display: flex;
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
   padding-top: 120px;
-}
+  padding-bottom: 60px;
+  
+  }
 
-/* .principles-container {
-  display: flex;
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  padding-top: 120px;
-} */
 .principles-title {
   font-weight: 500;
   font-size: 20px;
@@ -209,20 +216,26 @@ body {
   color: var(--dakr-overlays-headings);
   margin-bottom: 8px;
 }
+
 .principles-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
 
-/* Section 3 What are we doing */
+/*=============================== Section 3 What are we doing ===============================*/
 
 .what {
+  padding-top: 60px;
+  padding-bottom: 120px;
   background-color: var(--primary-background-color);
   /* height: 224px; */
 }
+
 .what-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -232,11 +245,26 @@ body {
   color: var(--dakr-overlays-headings);
 }
 
-/* Section 4 Our Team */
+.what-list {
+  display: flex;
+  gap: 24px;
+}
+
+.what-item {
+  width: 360px;
+  border: 1px solid var(--accent-background-color);
+}
+
+/*==================================== Section 4 Our Team ====================================*/
+
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--light-bacground-color);
 }
+
 .team-head {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -246,10 +274,25 @@ body {
   color: var(--dakr-overlays-headings);
 }
 
-.team-item {
-  background-color: var(--primary-background-color);
+.team-list {
+  display: flex;
+  gap: 24px;
 }
+
+
+.team-item {
+  width: 264px;
+  background-color: var(--primary-background-color);
+  padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-wrap {
+  
+}
+
+
 .team-name {
+  margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -257,7 +300,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--dakr-overlays-headings);
 }
+
 .team-position {
+  margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -265,13 +310,19 @@ body {
   color: var(--body-text-color);
 }
 
-/* Footer section */
+/*====================================== Footer section ======================================*/
+
 .footer {
   color: var(--accent-background-color);
   background-color: var(--dakr-overlays-headings);
 }
 
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .footer-logo {
+  
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -281,20 +332,31 @@ body {
   text-transform: uppercase;
   color: inherit;
 }
+
 .footer-logo > span {
   color: var(--primary-brand-color);
 }
+
 .footer-text {
+  margin-top: 16px;
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* Potrfolio.html */
+
+
+
+/*====================================== Potrfolio.html ======================================*/
+
+
+
 .solutions-portfolio {
   background-color: var(--primary-background-color);
 }
 
-/* Section 1 Filters */
+/*===================================== Section 1 Filters =====================================*/
+
 .solutions-filter-btn {
   font-weight: 700;
   font-size: 16px;
@@ -310,11 +372,13 @@ body {
   color: var(--primary-background-color);
   background-color: var(--pressed-state-color);
 }
-/* Subsection 1 cards */
+
+/*===================================== Subsection 1 cards =====================================*/
 
 .solutions-result list {
   background-color: var(--primary-background-color);
 }
+
 .solution-result-title {
   font-weight: 500;
   font-size: 20px;
