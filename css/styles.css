@@ -148,12 +148,12 @@ body {
 
 .solutions {
   background-color: var(--dakr-overlays-headings);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .solution-container {
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .solutions-title {
@@ -254,11 +254,11 @@ body {
 
 .team {
   background-color: var(--light-bacground-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team-head {
@@ -310,11 +310,11 @@ body {
 .footer {
   color: var(--accent-background-color);
   background-color: var(--dakr-overlays-headings);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -354,17 +354,18 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  margin-bottom: 72px;
 }
 
 .solutions-filter-btn {
-  margin-bottom: 72px;
+  
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
-  background-color: var(--light-bacground-colorcolor);
+  background-color: var(--light-bacground-color);
 
   padding: 12px 24px;
 
