@@ -60,8 +60,6 @@ img {
   padding-right: 15px;
 }
 
-
-
 /* ========================================== Body ==========================================  */
 
 body {
@@ -80,6 +78,7 @@ body {
 /*========================================== Header ==========================================*/
 .header {
   background-color: var(--primary-background-color);
+  border-bottom: 1px solid #E7E9FC;
 }
 
 .header-nav-conteiner {
@@ -155,18 +154,15 @@ body {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
-  height: 600px;
 }
 
 .solutions-title {
   margin: 0 auto;
   margin-bottom: 48px;
   max-width: 496px;
-  height: 120px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-
   letter-spacing: 0.02em;
   color: var(--primary-background-color);
 }
@@ -181,10 +177,10 @@ body {
   letter-spacing: 0.04em;
   color: var(--primary-background-color);
   background-color: var(--primary-brand-color);
-  width: 169px;
+
+  padding: 16px 32px;
+  min-width: 169px;
   height: 56px;
-  left: 636px;
-  top: 428px;
   border: none;
   border-radius: 4px;
 }
@@ -197,16 +193,14 @@ body {
 /*================================ Secrtion 2 Main principles ================================*/
 
 .priciples {
-  background-color: var(--primary-background-color);
-  height: 224px;
-  display: flex;
-  display: flex;
-  align-items: center;
-  gap: 24px;
   padding-top: 120px;
   padding-bottom: 60px;
-  
-  }
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
 
 .principles-title {
   font-weight: 500;
@@ -231,8 +225,7 @@ body {
   padding-top: 60px;
   padding-bottom: 120px;
   background-color: var(--primary-background-color);
-  /* height: 224px; */
-}
+  }
 
 .what-title {
   margin-bottom: 72px;
@@ -247,6 +240,8 @@ body {
 
 .what-list {
   display: flex;
+  justify-content: center;
+  align-content: center;
   gap: 24px;
 }
 
@@ -258,9 +253,12 @@ body {
 /*==================================== Section 4 Our Team ====================================*/
 
 .team {
+  background-color: var(--light-bacground-color);
+}
+
+.team-container {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: var(--light-bacground-color);
 }
 
 .team-head {
@@ -279,7 +277,6 @@ body {
   gap: 24px;
 }
 
-
 .team-item {
   width: 264px;
   background-color: var(--primary-background-color);
@@ -287,9 +284,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .team-list-wrap {
-  
 }
-
 
 .team-name {
   margin-top: 32px;
@@ -322,7 +317,6 @@ body {
   padding-bottom: 100px;
 }
 .footer-logo {
-  
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -345,19 +339,25 @@ body {
   letter-spacing: 0.02em;
 }
 
-
-
 /*====================================== Potrfolio.html ======================================*/
-
-
 
 .solutions-portfolio {
   background-color: var(--primary-background-color);
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 /*===================================== Section 1 Filters =====================================*/
 
+.solutions-filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
 .solutions-filter-btn {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
@@ -365,21 +365,41 @@ body {
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
   background-color: var(--light-bacground-colorcolor);
+
+  padding: 12px 24px;
+
+  border: 1px solid var(--accent-background-color);
+  border-radius: 4px;
 }
 
 .solutions-filter-btn:hover,
 .solutions-filter-btn:focus {
   color: var(--primary-background-color);
   background-color: var(--pressed-state-color);
+  border: 1px solid var(--pressed-state-color);
 }
 
 /*===================================== Subsection 1 cards =====================================*/
 
-.solutions-result list {
+.solutions-result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
   background-color: var(--primary-background-color);
 }
 
+.solution-result-item {
+  width: 360px;
+}
+
+.solution-item-wrap {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-background-color);
+  border-top: none;
+  background-color: var(--primary-background-color);
+}
 .solution-result-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
